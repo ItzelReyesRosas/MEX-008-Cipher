@@ -2,25 +2,19 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(img/bosque.jpg);
-
+  font-family: 'Cookie';
 }
 
-.primera_seccion{
-
-
-}
-
+/*Modifica el tìtulo de proBosques, lo centra sin un padding ni margin y con letra Cookie*/
 .inicio-bos{
-
   font-family: 'Cookie', cursive;
-
   font-size: 4em;
   text-align: center;
   padding: 0;
   margin: 0;
-
 }
 
+/*Modifica el slogan de proBosques, lo centra sin un padding ni margin*/
 .bio{
   font-size: 1.5em;
   text-align: center;
@@ -28,44 +22,40 @@ body {
   padding: 0;
   }
 
-  .botones{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
 
-  }
-
-.datos-ingreso{
-    text-align: center;
-}
-
-.entrar{
-  text-align: center;
-}
-
+/*Aquí comienza el estilo del formulario de ingreso de sesión, sus inputs y botòn de Entrar*/
+/* cont1 contiene dentro al formulario*/
 .cont1{
  max-width: 450px;
  height: auto;
  background-color: #F5F9F6;
- margin: 5% auto;
+ margin: 1% auto;   /*Margen para que se junte al slogan*/
  padding-bottom: 1rem;
- border-radius: 15px;
+ border-radius: 15px; /*borde para que se redondee el contenedor de ingreso*/
 }
-.form-top{
+
+/*A la imagen se le coloca propiedad de bloque para que pueda centrarse con auto*/
+img.profile{
+  display: block;
+  margin: auto;
+}
+
+/*Tamaño y estilo de "Iniciar sesiòn"*/
+h2 {
  width: 100%;
  text-align: center;
- padding: 2rem 0 1rem;
+ padding: 1rem 0 0;
  margin-bottom: 1rem;
-}
-.form-top h2{
-font-weight: bold;
-color: #7FA582;
-font-size: 18px;
-
+ /*color: #7FA582;*/
+ font-weight: bold;
 }
 
-h2 span{
- color: #7FA582;
+
+.form-ingreso{
+ padding: 0 2rem;
+ display: flex;  /*coloca los inputs uno debajo de otro*/
+ flex-direction: column;   /*Coloca los inputs en dos columnas de 2x2*/
+ justify-content: center;
 }
 
 .form-reg{
@@ -79,7 +69,7 @@ h2 span{
  justify-content: space-around;
  margin-top: 1rem;
 }
-#input.name, #input-name, #input-pass, #input-offset, .btn-submit{
+#input-name, #input-mail, #input-pass, #input-offset, .btn-submit{
  background-color: #F5F9F6;
  padding: .5rem;
  margin: .5rem 0;
@@ -106,9 +96,24 @@ h2 span{
 
 
 
+
+.crear-cuenta{
+  text-align: right;
+  font-size: 20px;
+}
+
+/*Contenedor de las conversaciones del chat, está centrado y de ancho mide 350%*/
+.cont2{
+ max-width: 400px;
+ height: auto;
+ background-color: #F5F9F6;
+ margin: 5% auto;
+ padding-bottom: 1rem;
+}
+
 /*Damos anchura del menú, quitamos las viñetas y márgenes de la lista.*/
 #menu_conversaciones{
-  width: 300px;
+  width: 400px;
   height: 50%;
   background: #A6CAB0;
   position: flex;
@@ -127,7 +132,8 @@ h2 span{
   display: block;
   padding: 14px;
   color: #476F52;
-  font: bold 16px Verdana;
+  font: bold 16px;
+  font-family: 'Nunito Sans', sans-serif;
   border-bottom:1px solid #f2f2f2;
   transition: background .6s, color .6s;
   border-radius: 5px;   /*redondea el border al seleccionar el contacto*/
@@ -139,14 +145,6 @@ h2 span{
 
 }
 
-/*Contenedor de las conversaciones del chat, está centrado y de ancho mide 350%*/
-.cont2{
- max-width: 350px;
- height: auto;
- background-color: #F5F9F6;
- margin: 5% auto;
- padding-bottom: 1rem;
-}
 
 
 /*CHAT*/
@@ -154,7 +152,10 @@ form, p, span {
     margin:0;
     padding:0; }
 
-input { font:12px arial; }
+input {
+  font:12px arial;
+ }
+
 
 a {
     color:#0000FF;
@@ -162,43 +163,6 @@ a {
 
     a:hover { text-decoration:underline; }
 
-#wrapper, #loginform {
-    margin:0 auto;
-    padding-bottom:25px;
-    background:#EBF4FB;
-    width:504px;
-    border:1px solid #ACD8F0; }
-
-#loginform { padding-top:18px; }
-
-    #loginform p { margin: 5px; }
-
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto; }
-
-#usermsg {
-    width:395px;
-    border:1px solid #ACD8F0; }
-
-#submit { width: 60px; }
-
-.error { color: #ff0000; }
-
-#menu { padding:12.5px 25px 12.5px 25px; }
-
-.welcome { float:left; }
-
-.logout { float:right; }
-
-.msgln { margin:0 0 2px 0; }
 
 .contChat{
 max-width: 450px;
@@ -212,15 +176,27 @@ padding-bottom: 1rem;
   text-align:left;
   margin:auto ;
   margin-bottom:25px;
-  max-width: 1000px;
   padding:10px;
   padding-left:
   padding-top: 20px;
   background:#fff;
   height:350px;
-  width:350px;
+  width:430px;
   border:1px solid #ACD8F0;
   overflow:auto;
+}
+
+#boton-codifica{
+ display: flex;
+ width: 40%;
+ border-bottom: none;
+ background-color: #90B299;  /*botòn verde*/
+ color: white;
+}
+
+#boton-codifica:hover{
+ background-color: #EED929;  /*botòn amarillo cuando se pasa el mouse*/
+
 }
 
 #texto-cifrado{
