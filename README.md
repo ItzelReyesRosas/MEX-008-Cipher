@@ -18,13 +18,22 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 ### Resumen del proyecto
 
 En los últimos meses se han reportado más de 200 incendios forestales en nuestro país en al menos 18 entidades federativas, muchos de los cuales han sido provocados. Tan solo 1,456 hectáreas de pastizales, arbustos y retoños de árboles adultos fueron consumidas de enero a abril en la Ciudad de México. Se estima que 9 de cada 10 incendios forestales son provocados y solo el 1 por ciento restante es causado por fenómenos naturales.
+<<<<<<< HEAD
 
 En mayo se registraron 82 incendios que afectabaron 19,564 hectáreas; 8 de ellas eran en áreas naturales protegidas en estados como Jalisco, Michoacán, Guerrero, Oaxaca y Chiapas.
 
 Existen brigadas civiles que se encargan de dar aviso y sofocar los incendios que viven con la constante amenaza de grupos de personas con intereses ilícitos como la tala ilegal, estas brigadas necesitan estar en constante comunicación eficaz y secreta.
+=======
+Existen brigadas civiles que se encargan de dar aviso y sofocar los incendios que viven con la constante amenaza de grupos de personas con intereses ilícitos como la tala ilegal, estas brigadas necesitan estar en constante comunicación eficaz y secreta.
+
+Ante esta situación surge "proBosques" una mensajería instantánea que cuenta con un Cifrado César para mayor seguridad de sus usuarios. Es sencilla de usar, permite ingresar además con un "Alias" y una "Clave de seguridad" (Offset) para mayor confidencialidad.
+
+![proBosques](/img/src/proBosques.png)
+>>>>>>> 8c939577dca89ed676dd0f6f7d25adc1b7bd0c17
 
 Ante esta situación surge "proBosques" una mensajería instantánea que cuenta con un Cifrado César para mayor seguridad de sus usuarios. Es sencilla de usar, permite ingresar además con un "Alias" (Un sobrenombre) y una "Clave de seguridad" (Offset) para mayor confidencialidad.
 
+<<<<<<< HEAD
 ![proBosques](/img/src/proBosques.png)
 
 
@@ -61,6 +70,39 @@ https://marvelapp.com/751hi9h/screen/58164002
 
 
 
+=======
+>>>>>>> 8c939577dca89ed676dd0f6f7d25adc1b7bd0c17
 
 
+<<<<<<< HEAD
+=======
+
+- Quiénes son los principales usuarios de producto.
+Organizaciones civiles, brigadistas y personas interesadas en el cuidado y protección de los recursos maderables de zonas vulnerables.
+
+- Cuáles son los objetivos de estos usuarios en relación con tu producto.
+Encontrar una manera segura y oportuna de comunicar cualquier incidente o incendio .
+
+- Cómo crees que el producto que estás creando está resolviendo sus problemas
+Esta aplicación será capaz de mantener un contacto seguro y confidencial entre todos los miembros de las organizaciones
+civiles protegiendo su identidad mediante el uso de un "Alias", además de contar con una "Clave de seguridad" (offset).
+
+
+
+
+#### Proceso para definir el producto final
+
+Busqué ejemplos de mensajerías seguras como Wire y Signal. Wire utiliza un username para poder comunicarse con otros usuarios, por lo tanto agregué un "Alias" para proteger la identidad de los usuarios. Mientras que la interfaz de Signal es mus sencilla e intutiva.
+
+Al definir mi usuario y recibir feedback consideré que el diseño debía ser sencillo, minimalista y orgánico, es decir debía contener elementos relacionados con la naturaleza , una paleta de colores con verdes, amarillos y cafés.
+
+También utilicé algunos elementos de Design Thinking, traté de empatizar con mi usuario final, para poder entender mejor sus necesidades y poder crear algo que solucionara sus problemas. EL prototipo sufrió varios cambios después de probarlo con usuarios pues en los primeros intentos había poca interactividad y no era claro lo que se tenía que hacer.
+
+![design](https://st3.depositphotos.com/13533222/16868/v/1600/depositphotos_168683244-stock-illustration-confused-business-person-vector-concept.jpg)
+
+
+
+
+
+>>>>>>> 8c939577dca89ed676dd0f6f7d25adc1b7bd0c17
 
