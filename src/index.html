@@ -2,6 +2,8 @@
 <html>
     <head>
     <title>proBosques</title>
+    <meta charset="UTF-8">
+
 
         <!--ESTILOS CSS-->
         <link rel="stylesheet" href="style.css">
@@ -12,13 +14,14 @@
 
    <body>
 
-                    <H1>proBosques<img class="mensaje" src="img/mensaje.jpg"></H1>
+              <header class="clase">
+
+                    <h1>proBosques<img class="mensaje" src="img/mensaje.jpg"></h1>
                     <p class="bio">Cuidando la biodiversidad</p>
+             </header>
 
-
-<div class="cont-connecting">
-
-
+<section id="primera-parte">
+<div id="cont-connecting">
 
   <img class="connecting" src="img/connecting-people.png">
  <p class="descripcion">Mantente en contacto con personas que como tú buscan un mundo lleno de árboles</p>
@@ -39,8 +42,8 @@
    <div class="boton-form">
 
 
-      <button id="ingresar">Ingresar</button>
-      
+      <button id="boton-ingresar">Ingresar</button>
+
     <p class="olvidar-pswd"><a href="">¿Olvidaste tu Contraseña?</a></p>
    </div>
 
@@ -49,8 +52,81 @@
 
 </div>
 </div>
+</section>
 
 
+
+<section id="segunda-parte">
+
+<div class="cont2">
+
+  <p id="welcome"> Bienvenido (a) </p>
+   <h2><img src="img/user.jpg">Chats</h2>
+
+   <!--CODIGO PARA IMPLEMENTAR LA BUSQUEDA DE CONTACTOS UTILIZANDO SOLO CSS3 FLEXBOX-->
+   <!--Todo lo que contiene el link href, es para traer la imagen de la lupa-->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+ <div id="search-wrapper">
+  <input type="search" id="search" placeholder="Buscar"/>
+  <i class="fa fa-search"></i>
+</div>
+
+  <div id="menu_conversaciones">
+
+
+    <ul>
+      <a href="#"><img src="img/user1.jpg"> Hugo Pineda</a>
+      <a href="#"><img src="img/user2.jpg">Cecilia Fuentes</a>
+      <a href="#"><img src="img/user3.jpg">René Hernández</a>
+      <a href="#"><img src="img/user5.jpg">Carlos Medina</a>
+      <a href="#"><img src="img/user4.jpg">Fabiola Romero</a>
+      <a href="#"><img src="img/user6.jpg">Sofía Mejía </a>
+
+
+      </ul>
+
+<p><img src="https://img.icons8.com/metro/26/000000/add-user-male.png"></p>
+</div>
+
+<!--Aquì insertamos las conversaciones-->
+<div class="contChat">
+  <div id="bienvenidaChat">
+    <p class="chat-Contacto"><img src="img/user2.jpg">Cecilia Fuentes</p>
+
+  </div>
+
+  <form name="message" action="">
+    <!--<label id= "offset-label">Offset</label>-->
+    <!--<input type="text" id="offset" maxlength="3" />-->
+    <br>
+
+    <p>  <input type="text" id= "texto-chat"/><img src="img/user.jpg"></p><br>
+      <button id="boton-codifica">Cifra</button><br><br>
+
+    <p><img src="img/user2.jpg"><input type="text" id="texto-cifrado" /></p><br>
+
+    <button id="boton-descifra">Descifra</button>  <br>
+
+    <p><img src="img/user2.jpg"><input type="text" id="texto-descifrado"></p><br>
+
+    <input type="text" id="texto-original" />
+    <button id="boton-texto">Enviar</button>
+
+
+    <br>
+
+
+  </form>
+
+
+
+  </div>
+</div>
+
+
+
+
+</section>
 
 
     <script src="cipher.js"></script>
