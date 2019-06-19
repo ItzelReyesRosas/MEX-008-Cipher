@@ -1,14 +1,18 @@
 
-//let inputName =  document.getElementById('input-name');
-//let bienvenido = document.getElementById('welcome');
-//const botonIngresar = document.getElementById('ingresar');
+let inputName =  document.getElementById('input-name');
+let bienvenido = document.getElementById('welcome');
+const botonIngresar = document.getElementById('boton-ingresar');
 
 
-//botonIngresar.addEventListener("click", event =>{
-  //  location.href="contactos.html";
-    //bienvenido.innerHTML = "Bienvenid@ " + inputName.value ;
-    //event.preventDefault();
-  //});
+botonIngresar.addEventListener("click", event =>{
+    bienvenido.innerHTML = "Bienvenid@ " + inputName.value ;
+    let segundaParte = document.getElementById('segunda-parte');
+    let primeraParte = document.getElementById('primera-parte');
+    primeraParte.style.display="none";
+    segundaParte.style.display="block";
+
+    event.preventDefault();
+  });
 
 
 /*document.getElementById('ingresar').addEventListener('clic');
@@ -31,7 +35,8 @@ const botonCodifica = document.getElementById('boton-codifica');
   botonCodifica.addEventListener("click", event => {
   let textoOriginal = document.getElementById('texto-original').value;
   let textoCifrado = document.getElementById('texto-cifrado');
-  let offset = document.getElementById('offset').value;
+  //let offset = document.getElementById('offset').value;
+  let offset = document.getElementById('input-offset').value;
   textoCifrado.value = cipher.encode(parseInt(offset), textoOriginal);
   event.preventDefault();
    });
@@ -42,7 +47,8 @@ const botonCodifica = document.getElementById('boton-codifica');
      botonDescifra.addEventListener("click", event => {
      let textoCifrado = document.getElementById('texto-cifrado').value;
      let textoDescifrado = document.getElementById('texto-descifrado');
-     let offset = document.getElementById('offset').value;
+     //let offset = document.getElementById('offset').value;
+     let offset = document.getElementById('input-offset').value;
      textoDescifrado.value = cipher.decode(parseInt(offset), textoCifrado);
      event.preventDefault();
       });
