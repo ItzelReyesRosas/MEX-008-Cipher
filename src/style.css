@@ -6,7 +6,7 @@ body {
 }
 
 /*Modifica el tìtulo de proBosques, lo centra sin un padding ni margin y con letra Cookie*/
-H1{
+h1{
   font-family: 'Cookie', cursive;
   font-size: 4em;
   color: #fff;
@@ -31,7 +31,15 @@ img.mensaje{
   padding: 0;
   }
 
+/*---------------------Primera Parte-----------------------------------------*/
+#primera-parte{
 
+
+}
+
+#segunda-parte{
+  display:none;
+}
 
 .cont-connecting{
   width : 100%;
@@ -74,11 +82,7 @@ max-width: 450px;
 
 }
 
-/*A la imagen se le coloca propiedad de bloque para que pueda centrarse con auto*/
-img.profile{
-  display: block;
-  margin: auto;
-}
+
 
 /*Tamaño y estilo de "Iniciar sesiòn"*/
 h2 {
@@ -113,7 +117,7 @@ h2 {
 
 
 
-#input-name, #input-mail, #input-pass, #input-offset, .btn-submit, #boton-entrar{
+#input-name, #input-mail, #input-pass, #input-offset, .btn-submit, #boton-ingresar{
  background-color: #F5F9F6;
  padding: .5rem;
  margin: .5rem 0;
@@ -126,7 +130,7 @@ h2 {
 .input:focus{
  border-bottom: solid #7FA582 .2rem;
 }
-.btn-submit, #boton-entrar{
+.btn-submit, #boton-ingresar{
  width: 40%;
  border-bottom: none;
  background-color: #90B299;
@@ -138,7 +142,7 @@ h2 {
 
 }
 
-#boton-entrar: hover{
+#boton-ingresar: hover{
  background-color: #EED929;
 
 }
@@ -155,18 +159,19 @@ h2 {
 .cont2{
  max-width: 900px;
  height: auto;
- /*background-color: #F5F9F6;*/
- background-color: yellow;
+ background-color: #F5F9F6;
+ /*background-color: yellow;*/
  margin: 5% auto;
  padding-bottom: 1rem;
-
 }
 
 /*Damos anchura del menú, quitamos las viñetas y márgenes de la lista.*/
 #menu_conversaciones{
   width: 350px;
   height: 560px;
-  background: #A6CAB0;
+  background: #2eb85c;
+  opacity: 0.8;
+
   float:left;
   overflow: hidden;
   display: inline;
@@ -221,13 +226,13 @@ a {
 
 /*------------------Estilo de la lupa de busqueda-------------------*/
 
-
 /*-----------------Mensajes de chat CIFRADO/DESCIFRADO -------------------------*/
 .contChat{
 max-width: 600px;
 height: 550px;
-/*background-color: #F5F9F6;*/
-background-color: red;
+background-color: #F5F9F6;
+
+/*background-color: red;*/
 /*margin: 5% auto;*/
 margin: 0;
 padding-bottom: 1rem;
