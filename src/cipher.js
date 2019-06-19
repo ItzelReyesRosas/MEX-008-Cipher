@@ -18,11 +18,11 @@ window.cipher = {
     let textoDescifrado = '';
     for (let i = 0; i < textoCifrado.length; i++) {
         let charASCII = textoCifrado.charCodeAt(i);
-        caracterDescifrado = ((charASCII - 65 - offset) % 26) + 65;
+        caracterDescifrado = ((charASCII + 65 - offset) % 26) + 65;
         textoDescifrado = textoDescifrado + String.fromCharCode(caracterDescifrado);
 
     }
     return textoDescifrado;
   }
 
-};
+}
