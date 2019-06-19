@@ -2,10 +2,7 @@
 <html>
     <head>
     <title>proBosques</title>
-        <meta charset="utf-8">
-        <meta name="description" content="proBosque">
-        <meta name="author" content="ITZEL REYES ROSAS">
-        <meta name="keywords" content="mensajeria", "bosques">
+
         <!--ESTILOS CSS-->
         <link rel="stylesheet" href="style.css">
         <!--FUENTE GOOGLE-->
@@ -14,43 +11,82 @@
     </head>
     <body>
 
-    <section class="primera_seccion">
-        <div class="inicio">  <!--mitad izq-->
-                <p class="inicio-bos">proBosques</p>
-                <p class="bio">Cuidando la biodiversidad</p>
-        </div>
-    </section>
 
-<div class="cont2">
-<p id="welcome"> Bienvenido (a) </p>
- <h2><img src="https://img.icons8.com/metro/26/000000/user-male-circle.png">Chats</h2>
+      <H1>proBosques<img class="mensaje" src="img/mensaje.jpg"></H1>
+      <p class="bio">Cuidando la biodiversidad</p>
 
-<!--Input de búsqueda
-<form class="form-search content-search navbar-form" action="" method="post">
-    <div class="input-group">
-        <input placeholder="Buscar" class="form-control form-text" type="text" size="15" maxlength="128" />
-        <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
-        </span>
-    </div>
-</form>
--->
 
-  <section id="menu_conversaciones">
+
+
+<section class="cont2">
+
+  <p id="welcome"> Bienvenido (a) </p>
+   <h2><img src="img/user.jpg">Chats</h2>
+
+   <!--CODIGO PARA IMPLEMENTAR LA BUSQUEDA DE CONTACTOS UTILIZANDO SOLO CSS3 FLEXBOX-->
+   <!--Todo lo que contiene el link href, es para traer la imagen de la lupa-->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+ <div id="search-wrapper">
+  <input type="search" id="search" placeholder="Buscar"/>
+  <i class="fa fa-search"></i>
+</div>
+
+  <div id="menu_conversaciones">
+
+
     <ul>
-      <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-male-circle.png"> Hugo Pineda</a>
-      <a href="chats.html"><img src="https://img.icons8.com/metro/26/000000/user-female-circle.png">Cecilia Fuentes</a>
-      <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-male-circle.png">René Hernández</a>
-      <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-male-circle.png">Carlos Medina</a>
-      <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-female-circle.png">Fabiola Romero</a>
-      <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-female-circle.png">Sofía Mejía </a>
+      <a href="#"><img src="img/user1.jpg"> Hugo Pineda</a>
+      <a href="#"><img src="img/user2.jpg">Cecilia Fuentes</a>
+      <a href="#"><img src="img/user3.jpg">René Hernández</a>
+      <a href="#"><img src="img/user5.jpg">Carlos Medina</a>
+      <a href="#"><img src="img/user4.jpg">Fabiola Romero</a>
+      <a href="#"><img src="img/user6.jpg">Sofía Mejía </a>
 
 
       </ul>
-  </<section>
+
 <p><img src="https://img.icons8.com/metro/26/000000/add-user-male.png"></p>
 </div>
 
+<!--Aquì insertamos las conversaciones-->
+<div class="contChat">
+  <div id="bienvenidaChat">
+    <p class="chat-Contacto"><img src="img/user2.jpg">Cecilia Fuentes</p>
+
+  </div>
+
+  <form name="message" action="">
+    <label id= "offset-label">Offset</label>
+    <input type="text" id="offset" maxlength="3" />
+    <br>
+
+    <p>  <input type="text" id= "texto-chat"/><img src="img/user.jpg"></p><br>
+      <button id="boton-codifica">Cifra</button><br><br>
+
+    <p><img src="img/user2.jpg"><input type="text" id="texto-cifrado" /></p><br>
+
+    <button id="boton-descifra">Descifra</button>  <br>
+
+    <p><img src="img/user2.jpg"><input type="text" id="texto-descifrado"></p><br>
+
+    <input type="text" id="texto-original" />
+    <button id="boton-texto">Enviar</button>
+
+
+    <br>
+
+
+  </form>
+
+
+
+  </div>
+
+
+
+
+
+</section>
 
 
 
@@ -59,4 +95,5 @@
 
 
 
+</body>
 </html>
