@@ -1,37 +1,77 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/bosque.jpg);
+    background-image: url(img/photo-bosque.jpg);
   font-family: 'Cookie';
 }
 
 /*Modifica el tìtulo de proBosques, lo centra sin un padding ni margin y con letra Cookie*/
-.inicio-bos{
+H1{
   font-family: 'Cookie', cursive;
   font-size: 4em;
+  color: #fff;
+  opacity: 0.8;
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+img.mensaje{
+  width : 70px;
+  height: 70px;
+
 }
 
 /*Modifica el slogan de proBosques, lo centra sin un padding ni margin*/
 .bio{
   font-size: 1.5em;
   text-align: center;
+  color: #fff;
   margin: 0;
   padding: 0;
   }
 
 
+
+.cont-connecting{
+  width : 100%;
+  height: 70%;
+}
+
+img.connecting{
+  width : 30%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+}
+
+.descripcion{
+
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  font-size: 1.5em;
+  color: #fff;
+
+}
+
 /*Aquí comienza el estilo del formulario de ingreso de sesión, sus inputs y botòn de Entrar*/
 /* cont1 contiene dentro al formulario*/
 .cont1{
- max-width: 450px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 50%;
+max-width: 450px;
  height: auto;
  background-color: #F5F9F6;
+ opacity: 0.6;
  margin: 1% auto;   /*Margen para que se junte al slogan*/
  padding-bottom: 1rem;
- border-radius: 15px; /*borde para que se redondee el contenedor de ingreso*/
+ border-radius: 5px; /*borde para que se redondee el contenedor de ingreso*/
+
 }
 
 /*A la imagen se le coloca propiedad de bloque para que pueda centrarse con auto*/
@@ -64,12 +104,16 @@ h2 {
  flex-direction: column;
  justify-content: center;
 }
+
 .btn-form{
  display: flex;
  justify-content: space-around;
  margin-top: 1rem;
 }
-#input-name, #input-mail, #input-pass, #input-offset, .btn-submit{
+
+
+
+#input-name, #input-mail, #input-pass, #input-offset, .btn-submit, #boton-entrar{
  background-color: #F5F9F6;
  padding: .5rem;
  margin: .5rem 0;
@@ -82,7 +126,7 @@ h2 {
 .input:focus{
  border-bottom: solid #7FA582 .2rem;
 }
-.btn-submit{
+.btn-submit, #boton-entrar{
  width: 40%;
  border-bottom: none;
  background-color: #90B299;
@@ -94,6 +138,10 @@ h2 {
 
 }
 
+#boton-entrar: hover{
+ background-color: #EED929;
+
+}
 
 
 
@@ -102,21 +150,27 @@ h2 {
   font-size: 20px;
 }
 
+/*-------------CONTENEDOR DE CONTACTOS Y CHATS-----------------------------*/
 /*Contenedor de las conversaciones del chat, está centrado y de ancho mide 350%*/
 .cont2{
- max-width: 400px;
+ max-width: 900px;
  height: auto;
- background-color: #F5F9F6;
+ /*background-color: #F5F9F6;*/
+ background-color: yellow;
  margin: 5% auto;
  padding-bottom: 1rem;
+
 }
 
 /*Damos anchura del menú, quitamos las viñetas y márgenes de la lista.*/
 #menu_conversaciones{
-  width: 400px;
-  height: 50%;
+  width: 350px;
+  height: 560px;
   background: #A6CAB0;
-  position: flex;
+  float:left;
+  overflow: hidden;
+  display: inline;
+
 }
 
 
@@ -164,67 +218,20 @@ a {
     a:hover { text-decoration:underline; }
 
 
+
+/*------------------Estilo de la lupa de busqueda-------------------*/
+
+
+/*-----------------Mensajes de chat CIFRADO/DESCIFRADO -------------------------*/
 .contChat{
-max-width: 450px;
-height: 450px;
-background-color: #F5F9F6;
-margin: 5% auto;
+max-width: 600px;
+height: 550px;
+/*background-color: #F5F9F6;*/
+background-color: red;
+/*margin: 5% auto;*/
+margin: 0;
 padding-bottom: 1rem;
-}
+overflow: hidden;
 
-#texto-original{
-  text-align:left;
-  margin:auto ;
-  margin-bottom:25px;
-  padding:10px;
-  padding-left:
-  padding-top: 20px;
-  background:#fff;
-  height:350px;
-  width:430px;
-  border:1px solid #ACD8F0;
-  overflow:auto;
-}
 
-#boton-codifica{
- display: flex;
- width: 40%;
- border-bottom: none;
- background-color: #90B299;  /*botòn verde*/
- color: white;
-}
-
-#boton-codifica:hover{
- background-color: #EED929;  /*botòn amarillo cuando se pasa el mouse*/
-
-}
-
-#texto-cifrado{
-  text-align:left;
-  margin:auto ;
-  margin-bottom:25px;
-  max-width: 1000px;
-  padding:10px;
-  padding-left:
-  padding-top: 20px;
-  background:#fff;
-  height:150px;
-  width:550px;
-  border:1px solid #ACD8F0;
-  overflow:auto;
-}
-
-#texto-descrifrado{
-  text-align:left;
-  margin:auto ;
-  margin-bottom:25px;
-  max-width: 1000px;
-  padding:10px;
-  padding-left:
-  padding-top: 20px;
-  background:#fff;
-  height:150px;
-  width:550px;
-  border:1px solid #ACD8F0;
-  overflow:auto;
 }
