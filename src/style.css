@@ -31,15 +31,11 @@ img.mensaje{
   padding: 0;
   }
 
+  #segunda-parte{
+    display:none;
+  }
+
 /*---------------------Primera Parte-----------------------------------------*/
-#primera-parte{
-
-
-}
-
-#segunda-parte{
-  display:none;
-}
 
 .cont-connecting{
   width : 100%;
@@ -58,7 +54,7 @@ img.connecting{
 .descripcion{
 
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 5%;
   font-size: 1.5em;
   color: #fff;
@@ -88,8 +84,8 @@ max-width: 450px;
 h2 {
  width: 100%;
  text-align: center;
- padding: 1rem 0 0;
- margin-bottom: 1rem;
+ padding: 1rem;
+ margin: 0;
  /*color: #7FA582;*/
  font-weight: bold;
 }
@@ -117,7 +113,7 @@ h2 {
 
 
 
-#input-name, #input-mail, #input-pass, #input-offset, .btn-submit, #boton-ingresar{
+#input-name, #input-mail, #input-pass, #input-offset, #boton-ingresar{
  background-color: #F5F9F6;
  padding: .5rem;
  margin: .5rem 0;
@@ -130,17 +126,14 @@ h2 {
 .input:focus{
  border-bottom: solid #7FA582 .2rem;
 }
-.btn-submit, #boton-ingresar{
+
+#boton-ingresar{
  width: 40%;
  border-bottom: none;
  background-color: #90B299;
  color: white;
 }
 
-.btn-submit:hover{
- background-color: #EED929;
-
-}
 
 #boton-ingresar: hover{
  background-color: #EED929;
@@ -159,23 +152,44 @@ h2 {
 .cont2{
  max-width: 900px;
  height: auto;
- background-color: #F5F9F6;
+ background-color: #2eb85c; /*verde*/
+ opacity: 0.9;
  /*background-color: yellow;*/
- margin: 5% auto;
- padding-bottom: 1rem;
+ margin: 5% auto; /*lo centra de los 4 lados*/
+ border-radius: 5px;
 }
 
-/*Damos anchura del menú, quitamos las viñetas y márgenes de la lista.*/
+/*Texto de Bienvenida que es sustituido por el nombre del usuario que se ingrese*/
+#welcome{
+  color: #080D09;
+  opacity: 0.5;
+  font-size: 40px;
+}
+
+#mensajes-usuario{
+  color: #080D09;
+  opacity: 0.8;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+#boton-codifica, #boton-descifra{
+  background-color: #2eb85c;
+  height: 35px;
+  weight: 30px;
+  border: none;
+}
+
+
+/*Damos anchura del menúy márgenes de la lista.*/
 #menu_conversaciones{
   width: 350px;
   height: 560px;
-  background: #2eb85c;
-  opacity: 0.8;
-
+  background:#020603;
   float:left;
-  overflow: hidden;
-  display: inline;
-
+  overflow: hidden;  /*Nos permite respetan el espacio del contenedor de chats*/
+  display: inline;   /*Nos permite tener a un lado el contenedor de chats*/
 }
 
 
@@ -187,7 +201,7 @@ h2 {
 
 
 #menu_conversaciones ul a{
-  text-decoration: none;
+  text-decoration: none; /*quitamos las viñetas del menú*/
   display: block;
   padding: 14px;
   color: #476F52;
@@ -201,42 +215,76 @@ h2 {
 #menu_conversaciones ul a:hover{
   background:#f2f2f2;
   color: #FACC2E;
-
 }
-
-
-
-/*CHAT*/
-form, p, span {
-    margin:0;
-    padding:0; }
-
-input {
-  font:12px arial;
- }
-
-
-a {
-    color:#0000FF;
-    text-decoration:none; }
-
-    a:hover { text-decoration:underline; }
-
-
-
-/*------------------Estilo de la lupa de busqueda-------------------*/
 
 /*-----------------Mensajes de chat CIFRADO/DESCIFRADO -------------------------*/
 .contChat{
 max-width: 600px;
 height: 550px;
 background-color: #F5F9F6;
-
-/*background-color: red;*/
-/*margin: 5% auto;*/
 margin: 0;
 padding-bottom: 1rem;
 overflow: hidden;
+}
+
+/*Nombre del contacto a quien se le escibe el mensaje*/
+.chat-Contacto{
+font-size: 20px;
+padding-left: 1rem;
+padding-bottom: 1rem;
+}
 
 
+#texto-original{
+padding-left: 15rem;
+padding-right: 2rem;
+}
+
+/*Contiene al párrafo en donde se encuentra el input texto-original*/
+#texto-chat{
+  border-radius: 3px;
+  width:200px;
+  height: 30px;
+  background: #ADAEAB;
+  radius: 6px;
+
+}
+
+/*Lugar en donde va a aprecer el mensaje ingresado por el usuario sin descifrar contiene input e imagen*/
+.texto-der{
+  position: relative;
+  left: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+/*Botón codifica ubicado a la derecha del chat*/
+#boton-codifica{
+  position: relative;
+  left: 450px;
+  padding: 0;
+}
+
+
+.texto-izq, .texto-izquierdo{
+  position: relative;
+  left: 100px;
+
+}
+
+/*Lugar en donde aparecen los mensajes cifrado y descifrado a lado izquierdo. Es la contestación de la persona con la que hablamos*/
+#texto-cifrado{
+  width:200px;
+  height: 30px;
+}
+
+#texto-descifrado{
+  width:200px;
+  height: 30px;
+}
+
+#boton-descifra{
+  position: relative;
+  left: 100px;
+  padding: 0;
 }
