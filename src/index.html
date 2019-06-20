@@ -15,7 +15,6 @@
    <body>
 
               <header class="clase">
-
                     <h1>proBosques<img class="mensaje" src="img/mensaje.jpg"></h1>
                     <p class="bio">Cuidando la biodiversidad</p>
              </header>
@@ -35,15 +34,12 @@
         <form class="form-ingreso" action="">
 
           <input type="text" id="input-name" placeholder="&#128100; Alias">
-         <input type="password" id="input-pass" placeholder="&#128274;  Contraseña"  >
-          <input type="text" id="input-offset" maxlength="3" placeholder="&#9888;  Clave de seguridad" >
+         <input type="password" id="input-pass" placeholder="&#128274;  Contraseña" required>
+          <input type="text" id="input-offset" maxlength="3" placeholder="&#9888;  Clave de seguridad" required>
+<!--<input class="btn-submit" type="button" value="ENTRAR">-->
 
-<input class="btn-submit" type="button" value="ENTRAR">
-   <div class="boton-form">
-
-
-      <button id="boton-ingresar">Ingresar</button>
-
+   <div class="btn-form">
+       <button id="boton-ingresar">Ingresar</button>
     <p class="olvidar-pswd"><a href="">¿Olvidaste tu Contraseña?</a></p>
    </div>
 
@@ -60,8 +56,9 @@
 
 <div class="cont2">
 
-  <p id="welcome"> Bienvenido (a) </p>
-   <h2><img src="img/user.jpg">Chats</h2>
+  <!--<p id="welcome"> Bienvenido (a) </p>-->
+<img src="img/user.jpg">
+   <p id="mensajes-usuario">Mensajes</p>
 
    <!--CODIGO PARA IMPLEMENTAR LA BUSQUEDA DE CONTACTOS UTILIZANDO SOLO CSS3 FLEXBOX-->
    <!--Todo lo que contiene el link href, es para traer la imagen de la lupa-->
@@ -80,12 +77,12 @@
       <a href="#"><img src="img/user3.jpg">René Hernández</a>
       <a href="#"><img src="img/user5.jpg">Carlos Medina</a>
       <a href="#"><img src="img/user4.jpg">Fabiola Romero</a>
-      <a href="#"><img src="img/user6.jpg">Sofía Mejía </a>
+      <a href="#"><img src="img/user6.jpg">Raquel Martínez </a>
 
 
       </ul>
 
-<p><img src="https://img.icons8.com/metro/26/000000/add-user-male.png"></p>
+<p><a href="index.html"><img src="img/logout.png" width="50" height="50"></a></p>
 </div>
 
 <!--Aquì insertamos las conversaciones-->
@@ -96,26 +93,15 @@
   </div>
 
   <form name="message" action="">
-    <!--<label id= "offset-label">Offset</label>-->
-    <!--<input type="text" id="offset" maxlength="3" />-->
-    <br>
 
-    <p>  <input type="text" id= "texto-chat"/><img src="img/user.jpg"></p><br>
-      <button id="boton-codifica">Cifra</button><br><br>
-
-    <p><img src="img/user2.jpg"><input type="text" id="texto-cifrado" /></p><br>
-
-    <button id="boton-descifra">Descifra</button>  <br>
-
-    <p><img src="img/user2.jpg"><input type="text" id="texto-descifrado"></p><br>
-
-    <input type="text" id="texto-original" />
+    <p class="texto-der">  <input type="text" id= "texto-chat"/><img src="img/user.jpg"></p><br>
+   <button id="boton-codifica">Cifra</button><br><br>
+   <p class="texto-izq"><img src="img/user2.jpg"><input type="text" id="texto-cifrado" /></p>
+    <button id="boton-descifra">Descifra</button><br><br><br>
+    <p class="texto-izquierdo"><img src="img/user2.jpg"><input type="text" id="texto-descifrado"></p><br>
+     <input type="text" id="texto-original" placeholder="Escribe tu mensaje" />
     <button id="boton-texto">Enviar</button>
-
-
     <br>
-
-
   </form>
 
 
